@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Appointment Booking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>Fill out the form below to book your haircut.</p>
 
+        <form id="bookingForm" action="https://formspree.io/f/YOUR_EMAIL_HERE" method="POST">
+
+            <label>Name</label>
+            <input type="text" name="name" required />
+
+            <label>Phone Number</label>
+            <input type="tel" name="phone" required />
+
+            <label>Date</label>
+            <input type="date" name="date" required />
+
+            <label>Time</label>
+            <input type="time" name="time" required />
+
+            <label>Service</label>
+            <select name="service" required>
+                <option value="Haircut">Haircut</option>
+                <option value="Beard Trim">Beard Trim</option>
+                <option value="Haircut + Beard">Haircut + Beard</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+        <p id="resultMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
