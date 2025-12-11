@@ -11,29 +11,30 @@
         <h1>Book an Appointment</h1>
         <p>Fill out the form below to book your haircut.</p>
 
-        <form id="bookingForm" action="https://formspree.io/f/eitandavila2004@icloud.com" method="POST">
+        <form action="https://formspree.io/f/xgvgpnkg" method="POST" class="booking-form">
+    <h2>Book an Appointment</h2>
 
-            <label>Name</label>
-            <input type="text" name="name" required />
+    <label>Your Name</label>
+    <input type="text" name="name" required />
 
-            <label>Phone Number</label>
-            <input type="tel" name="phone" required />
+    <label>Email</label>
+    <input type="email" name="email" required />
 
-            <label>Date</label>
-            <input type="date" name="date" required />
+    <label>Phone Number</label>
+    <input type="text" name="phone" required />
 
-            <label>Time</label>
-            <input type="time" name="time" required />
+    <label>Preferred Date</label>
+    <input type="date" name="date" required />
 
-            <label>Service</label>
-            <select name="service" required>
-                <option value="Haircut">Haircut</option>
-                <option value="Beard Trim">Beard Trim</option>
-                <option value="Haircut + Beard">Haircut + Beard</option>
-            </select>
+    <label>Preferred Time</label>
+    <input type="time" name="time" required />
 
-            <button type="submit">Book Appointment</button>
-        </form>
+    <label>Message (Optional)</label>
+    <textarea name="message" rows="4"></textarea>
+
+    <button type="submit">Book Now</button>
+</form>
+
 
         <p id="resultMsg"></p>
     </div>
